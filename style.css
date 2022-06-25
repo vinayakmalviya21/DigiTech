@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #010109;
+}
+
+header,
+.about {
+    color: whitesmoke;
+}
+
+.nav:hover {
+    color: blueviolet !important;
+    font-size: 26px;
+}
+
+header img {
+    opacity: 55% !important;
+}
+
+.btn {
+    background-color: rgb(120, 80, 106);
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+.heading:hover {
+    color: blueviolet;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+header img {
+    overflow: hidden;
+    transition-duration: 1.5s;
+    transition-property: transform;
+}
+
+header img:hover {
+    transform: translate(20px, 20px);
+}
+
+h1 {
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+.about img {
+    opacity: 40% !important;
+}
+
+.about:hover{ 
+    transform: rotateY(25deg);
+}
+.one,.two,.three{
+    color: white;
+}
+footer{
+    color: white;
+}
+footer h5{
+    color: blueviolet;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.one:hover,
+.two:hover,
+.three:hover {
+    color: white;
+    animation: roll 3s infinite;
+    transform: rotate(0deg);
+    opacity: 0.7;
+    animation-iteration-count: 1;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+
+
+
+@keyframes example {
+    from {
+        background-color: blueviolet;
+    }
+
+    to {
+        background-color: rgb(226, 18, 153);
+    }
+}
