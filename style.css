@@ -27,6 +27,10 @@ header img {
     animation-duration: 5s;
 }
 
+.size{
+    width:45vw;
+}
+
 .heading:hover {
     color: blueviolet;
     font-weight: bolder;
@@ -69,7 +73,11 @@ footer ul li a{
     color: white;
 }
 
-
+@media screen and (max-width:1200px) {
+    .size{
+        width: 100vw;
+    }
+}
 
 .one:hover,
 .two:hover,
