@@ -7,58 +7,75 @@ body {
     background-color: #010109;
 }
 
+#Preloader{
+    background: #000000 url("loader.gif" ) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100 !important;
+}
+
 header,
 .about {
     color: whitesmoke;
 }
+
 .navbar{
     background-color: #090910 !important;
     margin-top: 0px;
-
 }
-/* .nav:hover {
-    color: blueviolet !important;
-    font-size: 26px;
-} */
 
 header img {
     opacity: 55% !important;
+    border-radius: 15px;
 }
 
 .btn {
     background-color: blueviolet;
-    /* animation-name: example;
-    animation-duration: 5s; */
     padding: 10px 30px;
 }
+
 .btn:hover {
     background-color: rgb(124, 20, 222);
     
 }
+
 .size{
     width:45vw;
 }
 
+.text-grad{
+    background: linear-gradient(to right, #3572da ,#d70b82) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.btn{
+    color: white;
+    font-weight: bolder;
+    background: linear-gradient(to right, #3572da ,#d70b82) !important;
+
+}
+
+.w-fit{
+    width: fit-content !important;
+    margin:auto ;
+}
+
 .heading{
-    color: blueviolet;
+    background: linear-gradient(to right, #3572da ,#d70b82) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
     font-weight: bolder;
     font-style: italic;
 }
+
 .heading2{
-    color: blueviolet;
+    background: linear-gradient(to right, #3572da ,#d70b82) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
     font-weight: 400;
-    /* font-style: italic; */
 }
-
-/* header img {
-    overflow: hidden;
-    transition-duration: 1.5s;
-    transition-property: transform;
-}
-
-header img:hover {
-    transform: translate(20px, 20px);
-} */
 
 h1 {
     color: blueviolet;
@@ -67,11 +84,9 @@ h1 {
 
 .about img {
     opacity: 60% !important;
+    border-radius: 7px;
 }
 
-/* .about:hover{ 
-    transform: rotateY(25deg);
-} */
 .one{
     color: white;
 }
@@ -80,14 +95,17 @@ h1 {
     background-color:#0d0d0d;
     box-shadow: 4px 4px 18px 4px #090910 ;
 }
+
 footer{
     color: white;
     background-color: #111115;
     border-top: solid 0.5px rgba(255, 255, 255, 0.412);
 }
+
 footer h5{
     color: blueviolet;
 }
+
 footer ul li a{
     text-decoration: none;
     color: white;
@@ -100,49 +118,6 @@ footer ul li a{
     }
 }
 
-/* .one:hover,
-.two:hover,
-.three:hover {
-    color: white;
-    animation: roll 3s infinite;
-    transform: rotate(0deg);
-    opacity: 0.7;
-    animation-iteration-count: 1;
-} */
-
-/* @keyframes roll {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-@keyframes fadeInLeft {
-    0% {
-       opacity: 0;
-       transform: translateX(-20px);
-    }
-    100% {
-       opacity: 1;
-       transform: translateX(0);
-    }
- } */
-
-
-
-/* @keyframes example {
-    from {
-        background-color: blueviolet;
-    }
-
-    to {
-        background-color: rgb(226, 18, 153);
-    }
-} */
 .splide__slide{
     display:flex;
     justify-content: center;

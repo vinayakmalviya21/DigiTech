@@ -11,10 +11,13 @@
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"> -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
 </head>
 
 <body>
+
+   <div id="Preloader"></div>
 
   <!------------------------------------ Navbar ----------------------------->
   <nav class="navbar navbar-expand-lg navbar-dark bg-none">
@@ -53,34 +56,34 @@
 
   <!------------------------------------ Header ----------------------------->
   <header>
-    <div class="container d-flex flex-wrap mt-5 justify-content-between align-items-center">
-      <div>
+    <div class="container d-flex flex-wrap mt-5 justify-content-between align-items-center overflow-hidden" >
+      <div data-aos="fade-right">
         <figure>
           <img src="front img 1.jpg" alt="images" class="img-fluid  mt-2" width="550" height="600">
         </figure>
 
       </div>
-      <div class="size">
-        <h3 class="heading display-6 mt-5 ">Design your tech idea </h3>
-        <h3 class="heading display-6 ">into an iconic statement</h3>
+      <div class="size" data-aos="fade-left">
+        <h3 class="heading display-6 mt-5 text-grad" >Design your tech idea </h3>
+        <h3 class="heading display-6 text-grad">into an iconic statement</h3>
         <p class="mt-5 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, quae! Lorem ipsum
           dolor sit amet consectetur adipisicing elit.Tempora dolorem praesentium harum atque repellat
           quisquam et maiores soluta facilis quia minima inventore optio quibusdam quidem maxime, in
           temporibus fugit sit repudiandae pariatur.</p>
-        <button type="button" class="btn btn-secondary mt-5">Get More</button>
+        <button type="button" class="btn mt-5 text">Get More</button>
       </div>
     </div>
   </header>
 
 
   <!------------------------------------ About Us ----------------------------->
-  <section class="main_heading my-5" id="ABOUTUS">
+  <section class="main_heading my-5 overflow-hidden" id="ABOUTUS">
     <div class="text-center">
-      <h1 class="display-4 heading">About Us</h1>
+      <h1 class="display-4 heading text-grad w-fit">About Us</h1>
       <hr class="w-25 mx-auto">
     </div>
 
-    <div class="about container d-flex  flex-wrap mt-5 justify-content-between align-items-center">
+    <div class="about container d-flex  flex-wrap mt-5 justify-content-between align-items-center" data-aos="fade-up">
       <div>
         <figure>
           <img src="about-us.png" alt="images" class="img-fluid About_img " width="450" height="350">
@@ -88,7 +91,7 @@
 
       </div>
       <div class="size">
-        <h3 class="heading2 display-6">Faster Digital Transformation</h3>
+        <h3 class="heading2 display-6 text-grad ">Faster Digital Transformation</h3>
         <p class="mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, quae! Lorem ipsum
           dolor sit amet consectetur adipisicing elit.Tempora dolorem praesentium harum atque repellat
           quisquam et maiores soluta facilis quia minima inventore optio quibusdam quidem maxime, in
@@ -102,20 +105,20 @@
 
 
   <!------------------------------------ Features ----------------------------->
-  <section class="main_heading my-5 bg-none pt-5" id="FEATURES">
+  <section class="main_heading my-5 bg-none pt-5 overflow-hidden" id="FEATURES">
     <div class="text-center">
-      <h1 class="display-4 heading">Features</h1>
+      <h1 class="display-4 heading w-fit">Features</h1>
       <hr class="w-25 mx-auto mb-3">
     </div>
     <div class="container features">
 
       <div class="container">
-        <div class="row ">
+        <div class="row " data-aos="flip-up">
           <div class="col d-flex justify-content-center ">
             <div class="one mt-4" style="width: 18rem;">
-              <img src="secure.png" class="card-img-top" alt="...">
+              <img src="feature1.jpg" class="card-img-top mt-1" alt="...">
               <div class="card-body">
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk
+                <p class="card-text text-center mt-2">Some quick example text to build on the card title and make up the bulk
                   of the
                   card's content.</p>
               </div>
@@ -124,7 +127,7 @@
 
           <div class="col d-flex justify-content-center ">
             <div class="one mt-4" style="width: 18rem;">
-              <img src="secure.png" class="card-img-top" alt="...">
+              <img src="feature2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk
                   of
@@ -135,9 +138,9 @@
 
           <div class="col d-flex justify-content-center ">
             <div class="one mt-4" style="width: 18rem;">
-              <img src="secure.png" class="card-img-top" alt="...">
+              <img src="feature3.jpg" class="card-img-top mt-1" alt="...">
               <div class="card-body">
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk
+                <p class="card-text text-center mt-2">Some quick example text to build on the card title and make up the bulk
                   of the card's content.</p>
               </div>
             </div>
@@ -149,55 +152,9 @@
 
 
   <!------------------------------------ Products ----------------------------->
-
-  <!-- <section class="main_heading my-5" id="Products">
+  <section class="main_heading my-5 overflow-hidden" id="PRODUCTS">
     <div class="text-center">
-      <h1 class="display-4 heading">Products</h1>
-      <hr class="w-25 mx-auto">
-    </div>
-    <div id="carouselExampleIndicators" class="container carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active mt-5">
-          <img
-            src="https://wordtracker-swoop-uploads.s3.amazonaws.com/uploads/ckeditor/pictures/1247/content_wordtracker_blog_article_image.jpg"
-            class="d-block w-100 " alt="..." style="max-width: 1800px; max-height: 500px;">
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.blogtyrant.com/wp-content/uploads/2020/02/how-long-should-a-blog-post-be.png"
-            class="d-block w-100 mt-5" alt="..." style="max-width: 1800px; max-height: 500px;">
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://www.monsterinsights.com/wp-content/uploads/2020/01/what-is-the-best-time-to-post-a-blog-and-how-to-test-it-625x300.jpg.webp"
-            class="d-block w-100 mt-5" alt="..." style="max-width: 1800px; max-height: 500px;">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-  </section> -->
-
-
-  <section class="main_heading my-5" id="PRODUCTS">
-    <div class="text-center">
-      <h1 class="display-4 heading">Products</h1>
+      <h1 class="display-4 heading w-fit">Products</h1>
       <hr class="w-25 mx-auto">
     </div>
   <section class="splide mt-5" aria-label="Splide Basic HTML Example">
@@ -206,7 +163,7 @@
         <li class="splide__slide d-flex justify-content-center align-items-center"><div class="d-flex flex-column justify-content-center align-items-center"><img
             src="product1.jpg" class="d-block" alt="..." style="max-width: 450px;width: 300px; max-height: 450px; height: 300px;"><h2 class="my-3 text-white" >Microprocessor</h2><p class="d-flex justify-content-center align-items-center text-white">Lorem ipsum dolor, sit amet consectetur </p></div></li>
 
-        <li class="splide__slide"><div class="d-flex flex-column justify-content-center align-items-center"><img
+        <li class="splide__slide"><div class="d-flex flex-column justify-content-center align-items-center" ><img
             src="product2.jpg" class="d-block" alt="..." style="max-width: 450px;width: 300px; max-height: 450px; height: 300px;"><h2 class="my-3 text-white">Robot</h2><p class="d-flex justify-content-center align-items-center text-white">Lorem ipsum dolor, sit amet consectetur </p></div></li>
 
         <li class="splide__slide"><div class="d-flex flex-column justify-content-center align-items-center"><img
@@ -227,48 +184,48 @@
   </section>
 
   <!----------------------- Blog -------------------------->
-  <section class="main_heading my-5" id="BLOG">
+  <section class="main_heading my-5 overflow-hidden" id="BLOG">
     <div class="text-center">
-      <h1 class="display-4 heading">Blog</h1>
+      <h1 class="display-4 heading w-fit">Blog</h1>
       <hr class="w-25 mx-auto">
     </div>
     <div class="container d-flex mx-auto justify-content-center align-items-center">
       <div class="row d-flex mt-5 justify-content-center align-items-center ">
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center" data-aos="fade-left">
           <img
             src="blog1.jpg" class="d-block   mt-5" alt="..." style="max-width: 450px; width: 330px; max-height: 450px; height: 330px;">
         </div>
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center" data-aos="zoom-in">
           <img
             src="blog2.jpg" class="d-block mt-5" alt="..." style="max-width: 450px;width: 330px; max-height: 450px; height: 330px;">
         </div>
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center" data-aos="fade-right">
           <img
             src="blog3.jpg" class="d-block mt-5" alt="..." style="max-width: 450px;width: 330px; max-height: 450px; height: 330px;">
         </div>
      
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center" data-aos="fade-left">
           <img
             src="blog4.jpg" class="d-block mt-5" alt="..." style="max-width: 450px;width: 330px; max-height: 450px; height: 330px;">
         </div>
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center" data-aos="zoom-in">
           <img
             src="blog5.jpg" class="d-block mt-5" alt="..." style="max-width: 450px;width: 330px; max-height: 450px; height: 330px;">
         </div>
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center" data-aos="fade-right">
           <img
             src="blog6.jpg" class="d-block mt-5" alt="..." style="max-width: 450px;width: 330px; max-height: 450px; height: 330px;">
         </div>
       
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center" data-aos="fade-left">
           <img
             src="blog7.jpg" class="d-block mt-5" alt="..." style="max-width: 450px;width: 330px; max-height: 450px; height: 330px;">
         </div>
-        <div class="col d-flex justify-content-center align-items-center" >
+        <div class="col d-flex justify-content-center align-items-center" data-aos="zoom-in">
           <img
             src="blog8.jpg" class="d-block mt-5" alt="..." style="max-width: 450px;width: 330px; max-height: 450px; height: 330px;">
         </div>
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center" data-aos="fade-right">
           <img
             src="blog9.jpg" class="d-block mt-5" alt="..." style="max-width: 450px;width: 330px; max-height: 450px; height: 330px;">
         </div>
@@ -278,7 +235,7 @@
   </section>
 
   <!------------------------------------ Footer ----------------------------->
-  <footer class="bd-footer py-4 py-md-3 mt-5 bg-none" id="FOOTER">
+  <footer class="bd-footer py-4 py-md-3 mt-5 bg-none " id="FOOTER">
     <div class="container py-4 py-md-3 px-4 px-md-3">
       <div class="row">
         <div class="col-lg-3 mb-3">
@@ -336,6 +293,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
+
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var splide = new Splide('.splide', {
@@ -353,6 +312,24 @@
     });
 
   </script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:200,
+    duration:500,
+  });
+</script>
+
+<script>
+  var loader = document.getElementById("Preloader"); 
+  window .addEventListener(
+    "load",function()
+{
+loader.style.display= "none";
+})
+</script>
 
 </body>
 
